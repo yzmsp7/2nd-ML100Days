@@ -45,3 +45,16 @@
 	- 葉編碼完後，因為特徵數量較多，通常搭配邏輯斯回歸或者分解機做預測，其他模型較不適合
 
 ## Model Selection 模型選擇
+
+[[Day31]機器學習概論](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_031_HW.ipynb)
+
+[[Day32]機器學習-流程與步驟](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_032_HW.ipynb)
+
+[[Day33]機器如何學習？](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_033_HW.ipynb)
+
+[[Day34]訓練/測試集切分的概念](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_034_HW.ipynb)
+
+[[Day35]Regression vs. Classification](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_035_HW.ipynb)
+
+補充資料：
+[回歸與分類的比較](http://zylix666.blogspot.com/2016/06/supervised-classificationregression.html)
