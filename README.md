@@ -1,11 +1,25 @@
-# 2nd-ML100Days
+# 第二屆機器學習百日馬拉松 2nd-ML100Days
 
 ![Marathon Flow](/marathon.png)
 
-## Processing 資料清理前處理
+## 資料清理數據前處理
 
+[[Day1]資料介紹與評估資料](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_001_HW.ipynb)
 
-## Feature Engineering 特徵工程
+[[Day2]讀取資料EDA: Data summary](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_002_HW.ipynb)
+
+[[Day3]如何新建一個 dataframe?如何讀取其他資料? (非 csv 的資料)](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_003_HW.ipynb)
+
+[[Day4]EDA: 欄位的資料類型介紹及處理](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_004_HW.ipynb)
+
+	- 拿到資料的第一步，通常就是看我們有什麼，觀察有什麼欄位，這些欄位代表什麼意義、以什麼樣的資料類型來儲存
+	- 資料原來是字串/類別的話，如果要做進⼀步的分析時（如訓練模型），⼀般需要轉為數值的資料類型，轉換的⽅式通常有兩種
+		• Label encoding：使用時機通常是該資料的不同類別是有序的，例如該資料是年齡分組，類別有⼩孩、年輕⼈、老人，表⽰示為 0, 1, 2 是合理理的，因為年齡上老人 > 年輕人 > 小孩
+		• One Hot encoding：使用時機通常是該資料的不同類別是無序的，例如國家
+
+[[Day5]EDA資料分佈](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_005_HW.ipynb)
+
+## 資料科學特徵工程技術
 
 [[Day23]類別型特徵 - 均值編碼](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_023_HW.ipynb)  
 
@@ -44,7 +58,7 @@
 	- 葉編碼的目的是重新標記資料，以擬合後的樹狀模型分歧條件，將資料離散化，這樣比人為寫作的判斷條件更精確，更符合資料的分佈情形
 	- 葉編碼完後，因為特徵數量較多，通常搭配邏輯斯回歸或者分解機做預測，其他模型較不適合
 
-## Model Selection 模型選擇
+## 機器學習基礎模型建立
 
 [[Day31]機器學習概論](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_031_HW.ipynb)
 
@@ -56,5 +70,24 @@
 
 [[Day35]Regression vs. Classification](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_035_HW.ipynb)
 
-補充資料：
-[回歸與分類的比較](http://zylix666.blogspot.com/2016/06/supervised-classificationregression.html)
+[[Day36]評估指標選定](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_036_HW.ipynb)
+
+	- 評估指標選擇
+		- 回歸問題：R-square
+		- 類問題(二元)：AUC
+		- 想特別觀察哪一類：F1-Score
+		- 分類問題(多元)：top-k 
+	- AUC 計算時填入每個樣本預測機率
+	- F1-Score則是每個以分類結果機率>0.5視為1
+
+[[Day37]Regression 模型](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_037_HW.ipynb)
+
+[[Day38]Regression 模型-程式碼](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_038_HW.ipynb)
+
+## 機器學習調整參數
+
+## 非監督式機器學習
+
+## 初探深度學習 - 使用Keras
+
+## 深度學習應用卷積神經網路
