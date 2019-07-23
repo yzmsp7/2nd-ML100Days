@@ -84,6 +84,24 @@
 
 [[Day38]Regression 模型-程式碼](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_038_HW.ipynb)
 
+[[Day39]LASSO, Ridge Regression](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_039_HW.ipynb)
+
+	- 為避免overfitting，我們可以加入正規化，目標函數＝損失函數＋正規化
+	- 正規化可以懲罰模型的複雜度，當模型越複雜期值越大
+	- LASSO＝Linear Regression + L1
+	- Ridge＝Linear Regression + L2
+	- LASSO之所以可以當作特徵選取的工具，是因為他是以參數稀疏化來做訓練的，因此某些特徵最後權重會變成0，達成特徵選取之功用
+
+[[Day40]LASSO, Ridge Regression-程式碼](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_040_HW.ipynb)
+
+[[Day41]決策樹](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_041_HW.ipynb)
+
+	- 透過一系列的是非問題，幫助我們將資料進行切分
+	- 衡量資料相似程度可以用Gini&Entropy
+	- 我們可以從構建樹的過程中，透過feature被用來切分的次數來判斷哪些feature是相對有用的
+
+
+
 ## 機器學習調整參數
 
 ## 非監督式機器學習
