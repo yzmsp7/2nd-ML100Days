@@ -100,6 +100,15 @@
 	- 衡量資料相似程度可以用Gini&Entropy
 	- 我們可以從構建樹的過程中，透過feature被用來切分的次數來判斷哪些feature是相對有用的
 
+[[Day42]決策樹 - 程式碼撰寫](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_042_HW.ipynb)
+
+[[Day43]隨機森林](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_043_HW.ipynb)
+
+	- 為了解決決策樹容易overfitting的缺點，以決策樹為基底延伸的模型
+	- 隨機森林的每一棵樹在生成過程中，都是隨機使用一部分的訓練資料和特徵
+
+[[Day44]隨機森林 - 程式碼撰寫](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_044_HW.ipynb)
+
 
 
 ## 機器學習調整參數
