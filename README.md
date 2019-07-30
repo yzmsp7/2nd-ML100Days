@@ -109,11 +109,51 @@
 
 [[Day44]隨機森林 - 程式碼撰寫](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_044_HW.ipynb)
 
+[[Day45]梯度提升機](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_045_HW.ipynb)
 
+	- RandomForest是每棵獨立的樹，前一棵樹不會影響下一棵樹
+	- GradientBoosting是為了修正前一棵樹，每一棵樹都是關聯的
 
+[[Day46]梯度提升機 - 程式碼撰寫](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_046_HW.ipynb)
 ## 機器學習調整參數
 
+[[Day47]超參數調整](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_047_HW.ipynb)
+
+	- 超參數都會影響模型訓練的結果，建議先用預設值再慢慢調整
+	- 但超參數提升效果有限，最重要的還是資料清理與特徵工程
+	- 超參數調整方法
+		- 窮舉(Grid Search)
+		- 隨機搜尋(Random Search)
+
+[[Day48]Kaggle 競賽平台介紹](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_048_HW.ipynb)
+
+[[Day49]混合泛化(Blending)](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_049_HW.ipynb)
+
+[[Day50]堆疊泛化(Stacking)](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_050_HW.ipynb)
+
+	- 堆疊泛化將模型預測當作特徵時，要避免「要編碼」的資料與訓練編碼器的資料重疊，因此設計上看起來相當複雜
+	- 堆疊泛化理論上在堆疊層數上沒有限制，但如果第一層的單模不夠複雜，堆疊二三層後改善幅度就有限了
+	- 混合泛化相對堆疊泛化來說，優點在於容易使用，曲點在於無法更深入地利用資料，進一步混合模型
+
 ## 非監督式機器學習
+
+[[Day54]非監督式機器學習簡介](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_054_HW.ipynb)
+
+	- 在不清楚資料特性、問題定義、沒有標記的情況下，非監督式學習可以幫助我們理清資料脈絡
+	- 特徵數太龐大的晴望下，非監督式學習可以幫著概念抽象化，用更簡潔的特徵描述資料
+	- 非監督式學習以具類算法以及降維度算法為主
+
+[[Day55]K-means聚類算法](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_056_HW.ipynb)
+
+	- 當問題不清楚或是資料未有標注的情況下，可以嘗試用分群算法幫助了解資料結構，而其中一個方法是運用K-means聚類算法幫助分群資料
+	- 分群算法需要事先定一群數，因此評估效果只能藉由人為觀察
+
+[[Day56]K-mean 觀察:使⽤用輪輪廓分析](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_056_HW.ipynb)
+
+	- 輪廓分數是一種同群資料點越近 / 不同群資料點越遠時會越⼤的分數，除了可以評估資料點分群是否得當，也可以用來評估分群效果
+	- 要以輪廓分析觀察 K-mean，除了可以將每個資料點分組觀察以評估資料點分群是否得當，也可⽤平均值觀察評估不同 K 值的分群效果
+
+
 
 ## 初探深度學習 - 使用Keras
 
