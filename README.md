@@ -1,3 +1,4 @@
+
 # 第二屆機器學習百日馬拉松 2nd-ML100Days
 
 ![Marathon Flow](/marathon.png)
@@ -153,7 +154,21 @@
 	- 輪廓分數是一種同群資料點越近 / 不同群資料點越遠時會越⼤的分數，除了可以評估資料點分群是否得當，也可以用來評估分群效果
 	- 要以輪廓分析觀察 K-mean，除了可以將每個資料點分組觀察以評估資料點分群是否得當，也可⽤平均值觀察評估不同 K 值的分群效果
 
+[[Day57]階層分群算法](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_057_HW.ipynb)
 
+	- 階層式分群在無需定義群數的情況下做資料的分群，而後可以⽤不同的距離定義⽅式決定資料群組。
+	- 分群距離計算方式有single-link, complete-link, average-link。
+	- 概念簡單且容易呈現，但不適合用在⼤資料。
+
+[[Day58]階層分群法觀察:使⽤2D樣版資料集](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_058_HW.ipynb)
+
+	- 了解2D樣板資料集的設計著重於圖形的人機差異，用途在讓人眼以非量化的方式評估非監督模型的好壞，也因為非監督問題的類型不同，這類資料集也有分群與流形還原等不同對應類型
+	- 2D樣版資料集很多套件都有，也不限於只有Python上使用的套件：如 sklearn/mathworks/mlbench 都有對應的datasets
+
+[[Day59]降維方法：主成份分析](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_059_HW.ipynb)
+
+	- 降低維度可以幫助我們壓縮及丟棄無用資訊、抽象化及組合新特徵、呈現高維數據。常用的算法為主成份分析
+	- 在維度太大發生overfitting的情況下，可以嘗試用PCA組成的特徵來做監督式學習，但不建議一開始就做
 
 ## 初探深度學習 - 使用Keras
 
