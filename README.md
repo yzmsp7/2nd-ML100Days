@@ -170,6 +170,18 @@
 	- 降低維度可以幫助我們壓縮及丟棄無用資訊、抽象化及組合新特徵、呈現高維數據。常用的算法為主成份分析
 	- 在維度太大發生overfitting的情況下，可以嘗試用PCA組成的特徵來做監督式學習，但不建議一開始就做
 
+[[Day60]PCA觀察：使用手寫辨識資料集](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_060_HW.ipynb)
+
+[[Day61]降維方法：t-SNE](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_061_HW.ipynb)
+
+	- 特徵間為非線性關係時(e.g. 文字、影像資料)，PCA容易underfitting
+	- t-SNE對於特徵非線性資料有更好的降維能力
+
+[[Day62]t_SNE觀察：分群與流形還原](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_062_HW.ipynb)
+
+	- 流形還原就是在高維度到低維度的對應中，盡量保持資料點之間的遠近關係，沒有資料點的地方，就不列入考量範圍 
+	- 除了 t-sne 外，較常見的流形還原還有 Isomap 與 LLE(Locally Linear Embedding) 等⼯具
+	
 ## 初探深度學習 - 使用Keras
 
 ## 深度學習應用卷積神經網路
