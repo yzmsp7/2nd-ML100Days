@@ -20,6 +20,10 @@
 
 [[Day5]EDA資料分佈](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_005_HW.ipynb)
 
+[[Day6]EDA與Outlier檢查]()
+
+[[Day7]常用數值取代：中位數與分位數連續數值標準化]()
+
 ## 資料科學特徵工程技術
 
 [[Day23]類別型特徵 - 均值編碼](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_023_HW.ipynb)  
@@ -74,7 +78,7 @@
 [[Day36]評估指標選定](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_036_HW.ipynb)
 
 	- 評估指標選擇
-		- 回歸問題：R-square
+	    - 回歸問題：R-square
 		- 類問題(二元)：AUC
 		- 想特別觀察哪一類：F1-Score
 		- 分類問題(多元)：top-k 
@@ -177,11 +181,36 @@
 	- 特徵間為非線性關係時(e.g. 文字、影像資料)，PCA容易underfitting
 	- t-SNE對於特徵非線性資料有更好的降維能力
 
-[[Day62]t_SNE觀察：分群與流形還原](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_062_HW.ipynb)
+[[Day62] t_SNE觀察：分群與流形還原](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_062_HW.ipynb)
 
 	- 流形還原就是在高維度到低維度的對應中，盡量保持資料點之間的遠近關係，沒有資料點的地方，就不列入考量範圍 
 	- 除了 t-sne 外，較常見的流形還原還有 Isomap 與 LLE(Locally Linear Embedding) 等⼯具
 	
 ## 初探深度學習 - 使用Keras
+
+[[Day63]深度學習簡介](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_063_HW.ipynb)
+
+	- 深度學習不僅在深度高於類神經，因著算法改良、硬體能力提升以及巨量量資料等因素，已經成為⽬前最熱門的技術
+	- 不同的深度學習架構適用於不同種類的應⽤，如卷積神經網路(CNN)適⽤於影像處理，遞歸神經網路(RNN)適用於⾃然語言處理，⾄今這些架構仍在持續演進與改良
+	- 深度神經網路巨觀結構來看，包含輸入層/隱藏層/輸出層等層次，局部則是由啟動函數轉換輸出，藉由預測與實際值差距的損失函數，⽤倒傳遞方式更新權重，以達成各種應用的學習目標
+
+[[Day64]深度學習體驗](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_064_HW.ipynb)
+
+	- 雖然圖像化更直覺，但是並非量化指標且可視化不容易，故深度學習的觀察指標仍以損失函數/誤差為主
+	- 對於不同資料類型，適合加深與加寬的問題都有，但加深適合的問題類型較多
+	- 輸入特徵的選擇影響結果甚巨，因此深度學習也需要考慮特徵工程
+
+[[Day65]深度學習體驗:啟動函數與正規化](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_065_HW.ipynb)
+
+	- 批次大小越小：學習曲線越不穩定、但收斂越快
+	- 學習速率越大：學習曲線越不穩定、但收斂越快，但是與批次大小不同的是：學習速率大於一定以上時，可能不穩定到無法收斂
+	- 當類神經網路層數不多時，啟動函數 Sigmoid/ Tanh 的效果比 Relu 好
+	- L1/L2 正規化在非深度學習上效果較明顯，而正規化參數較小才有效果
+
+[[Day66]Keras安裝與介紹](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_066_HW.ipynb)
+
+	- Keras是將TensorFlow等後端程式封裝並優化，易學易用的深度學習基礎套件
+
+[[Day67]Keras Embedded Dataset介紹與應用](https://github.com/yzmsp7/2nd-ML100Days/blob/master/homework/Day_067_HW.ipynb)
 
 ## 深度學習應用卷積神經網路
